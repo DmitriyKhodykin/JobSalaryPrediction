@@ -53,4 +53,4 @@ def csv_creator():
     return data
 
 
-csv_creator().to_csv('csv_data.csv')
+csv_creator().to_csv('raw_data.csv')
