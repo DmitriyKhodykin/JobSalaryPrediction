@@ -56,8 +56,8 @@ LR = 0.05
 * Оценка модели (MAPE - Mean Absolute Percent Error):
 
 ```
-bestTest = 0.2421849535
-bestIteration = 261
+bestTest = 0.222457398
+bestIteration = 1861
 ```
 
 * Сериализация модели:
