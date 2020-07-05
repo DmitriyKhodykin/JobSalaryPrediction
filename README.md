@@ -53,7 +53,7 @@ LR = 0.05
       )
 ```
 
-* Оценка модели (внутренняя метрика CatBoost, доля ошибок):
+* Оценка модели (MAPE - Mean Absolute Percent Error):
 
 ```
 bestTest = 0.2421849535
