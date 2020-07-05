@@ -14,7 +14,8 @@
 
 * Вид подготовленных данных:
 
- ```position                | gender    | city    | age   | salary  | experience 
+ ```
+    position                | gender    | city    | age   | salary  | experience 
     0 Менеджер по продажам  | Женщина   | Москва  | 31    | 70      | 8
     1 Клиентский менеджер   | Мужчина   | Липецк  | 40    | 90      | 15
     2 Супервайзер           | Мужчина   | Самара  | 34    | 50      | 7
@@ -22,7 +23,8 @@
 
 * Гиперпараметры модели:
 
-```RANDOM_SEED = 42
+```
+RANDOM_SEED = 42
 VERSION = 11
 VAL_SIZE = 0.33
 N_FOLDS = 5
