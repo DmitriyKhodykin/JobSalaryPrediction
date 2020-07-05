@@ -68,4 +68,4 @@ bestIteration = 261
 
 Конфигурация сервиса: 
 
-![](/service/JSP_Service.png.png)
+![](/service/JSP_Service.png)
