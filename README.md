@@ -31,3 +31,27 @@ N_FOLDS = 5
 ITERATIONS = 2000
 LR = 0.05
 ```
+
+* Обучение модели:
+
+```
+  model = CatBoostRegressor(
+      iterations=ITERATIONS, 
+      learning_rate=LR, 
+      random_seed=RANDOM_SEED,
+      eval_metric='MAPE', 
+      custom_metric=['R2', 'MAE']
+      )
+  
+  model.fit(
+      X_train, y_train, 
+      cat_features=cat_features_ids,
+      eval_set=(X_test, y_test), 
+      verbose_eval=100, 
+      use_best_model=True, 
+      plot=True
+      )
+```
+
+* Сериализация модели:
+Сериализация модели реализована с помощью модуля `pickle`, сериализованная модель `jsp_model.pkl` находится в директории `model` 
