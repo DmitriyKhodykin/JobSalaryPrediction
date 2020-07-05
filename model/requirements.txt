@@ -1,0 +1,13 @@
+catboost==0.23.2
+numpy==1.18.5
+pandas==1.0.5
+pandas-datareader==0.8.1
+pandas-gbq==0.11.0
+pandas-profiling==1.4.1
+pip-tools==4.5.1
+scikit-image==0.16.2
+scikit-learn==0.22.2.post1
+sklearn==0.0
+sklearn-pandas==1.8.0
+xgboost==0.90
+zipp==3.1.0
