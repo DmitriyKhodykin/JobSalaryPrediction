@@ -69,7 +69,7 @@ bestIteration = 1861
 
 Конфигурация развертки предобученной модели машинного обучения – Job Salary Prediction (CatBoostReg): nginx + uwsgi + Flask на виртуальном сервере под управлением Ubuntu 20.04. Файлы конфигурации в директории `service`
 
-![](/service/jsp_service.png)
+![](/service/jsp_service_pic.png)
 
 ### 5. Использование сервиса
 
