@@ -86,17 +86,26 @@ import requests
 import json
 
 
-r = requests.request("GET", "http://0.0.0.0:80/jsp",
-                     data='''{
-                     "position": "Супервайзер",
-                     "gender": "Мужчина",
-                     "city": "Воронеж",
-                     "age": 40,
-                     "experience": 5
-                     }'''
+def get_predict_salary():
+    """Отправка GET-запроса на сервер для предсказания
+    ожидаемого сотрудником уровня дохода.
+    
+    position - наименование должности (из endpoint /positions);
+    gender - пол (Мужчина; Женщина);
+    city - город проживания;
+    age - возраст, лет;
+    experience - опыт работы, лет"""
+    
+    r = requests.request("GET", "http://0.0.0.0:80/jsp",
+                         data='''{
+                         "position": "Супервайзер",
+                         "gender": "Мужчина",
+                         "city": "Воронеж",
+                         "age": 40,
+                         "experience": 5
+                         }'''
 
-response = json.loads(r.text.encode('utf8'))
-print(response)
+    return json.loads(r.text.encode('utf8'))
 ```
 
 * Пример ответа:
