@@ -95,7 +95,8 @@ r = requests.request("GET", "http://0.0.0.0:80/jsp",
                      "experience": 5
                      }'''
 
-json.loads(r.text.encode('utf8'))
+response = json.loads(r.text.encode('utf8'))
+print(response)
 ```
 
 * Пример ответа:
