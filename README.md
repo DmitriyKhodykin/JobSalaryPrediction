@@ -27,10 +27,10 @@
 ```
 RANDOM_SEED = 42
 VERSION = 11
-VAL_SIZE = 0.33
+VAL_SIZE = 0.2
 N_FOLDS = 5
 ITERATIONS = 2000
-LR = 0.05
+LR = 0.01
 ```
 
 * Обучение модели:
