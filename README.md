@@ -82,13 +82,20 @@ bestIteration = 1861
 * Пример запроса:
 
 ```
-data='''{
-    "position": "Супервайзер",
-    "gender": "Мужчина",
-    "city": "Воронеж",
-    "age": 40,
-    "experience": 5
-}'''
+import requests
+import json
+
+
+r = requests.request("GET", "http://0.0.0.0:80/jsp",
+                     data='''{
+                     "position": "Супервайзер",
+                     "gender": "Мужчина",
+                     "city": "Воронеж",
+                     "age": 40,
+                     "experience": 5
+                     }'''
+
+json.loads(r.text.encode('utf8'))
 ```
 
 * Пример ответа:
