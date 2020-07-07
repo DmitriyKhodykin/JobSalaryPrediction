@@ -150,7 +150,7 @@ def get_predict_salary():
                          "city": "Воронеж",
                          "age": 40,
                          "experience": 5
-                         }'''
+                         }''')
 
     return json.loads(r.text.encode('utf8'))
 ```
