@@ -136,28 +136,45 @@ import json
 def get_predict_salary():
     """Отправка GET-запроса на сервер для предсказания
     ожидаемого сотрудником уровня дохода.
-    
+
     position - наименование должности (из endpoint /positions);
     gender - пол (Мужчина; Женщина);
     city - город проживания;
     age - возраст, лет;
     experience - опыт работы, лет"""
-    
-    r = requests.request("GET", "http://0.0.0.0:80/jsp",
-                         data='''{
-                         "position": "Супервайзер",
-                         "gender": "Мужчина",
-                         "city": "Воронеж",
-                         "age": 40,
-                         "experience": 5
-                         }'''.encode('utf-8'))
 
-    return json.loads(r.text.encode('utf8'))
+    headers = {'Content-Type': 'application/json; charset=utf-8'}
+
+    r_positions = requests.request("GET", "http://194.67.112.230:5000/positions")
+
+    r_predict = requests.request("GET", "http://194.67.112.230:5000/jsp",
+                                 headers=headers,
+                                 data='''{
+                                 "position": "Супервайзер",
+                                 "gender": "Мужчина",
+                                 "city": "Воронеж",
+                                 "age": 40,
+                                 "experience": 10
+                                 }'''.encode('utf-8'))
+
+    positions = json.loads(r_positions.text.encode('utf8'))
+    predict = json.loads(r_predict.text.encode('utf8'))
+
+    return positions, predict
+
+
+if __name__ == '__main__':
+    print(get_predict_salary()[0],
+          '\n', '\n',
+          get_predict_salary()[1])
+
 ```
 
 * Пример ответа:
 
 ```
+{'Positions:': ['Администратор', 'Коммерческий директор', 'Курьер', 'Менеджер по закупкам', 'Менеджер по продажам', 'Менеджер по развитию', 'Мерчендайзер', 'Региональный менеджер', 'Руководитель продаж', 'Специалист', 'Супервайзер', 'Территориальный менеджер', 'Товаровед', 'Торговый представитель']} 
+
 {"JobSalaryPrediction, RUR": 50 000}
 ```
 
