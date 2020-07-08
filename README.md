@@ -145,9 +145,9 @@ def get_predict_salary():
 
     headers = {'Content-Type': 'application/json; charset=utf-8'}
 
-    r_positions = requests.request("GET", "http://194.67.112.230:5000/positions")
+    r_positions = requests.request("GET", "http://0.0.0.0:80/positions")
 
-    r_predict = requests.request("GET", "http://194.67.112.230:5000/jsp",
+    r_predict = requests.request("GET", "http://0.0.0.0:80/jsp",
                                  headers=headers,
                                  data='''{
                                  "position": "Супервайзер",
