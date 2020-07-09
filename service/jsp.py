@@ -1,4 +1,5 @@
 # jsp.py
+# Модуль для "обвязки" модели машинного обучения декоратором Flask
 
 # Imports
 from flask import Flask, request, jsonify
