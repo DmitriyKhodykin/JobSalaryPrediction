@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve jsp
+After=network.target
+
+[Service]
+User=user
+Group=www-data
+WorkingDirectory=/service/jsp
+Environment="PATH=/service/jsp/env/bin"
+ExecStart=/service/jsp/env/bin/uwsgi --ini jsp.ini
+
+[Install]
+WantedBy=multi-user.target
