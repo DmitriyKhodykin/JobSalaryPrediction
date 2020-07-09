@@ -134,7 +134,7 @@ bestIteration = 1861
 - `systemd/system/jsp.service` - конфигурация для запуска сервиса jsp через systemd
 - `nginx/sites-available/jsp` - конфигурация nginx
 
-После конфигурирования ==nginx== необходимо активировать конфигурацию `sudo ln -s /etc/nginx/sites-available/jsp /etc/nginx/sites-enabled/`
+После конфигурирования `nginx` необходимо активировать конфигурацию `sudo ln -s /etc/nginx/sites-available/jsp /etc/nginx/sites-enabled/`
 
 ### 5. Использование сервиса
 
