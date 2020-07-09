@@ -124,15 +124,15 @@ bestIteration = 1861
 
 `/service`
 
--- `jsp.py` - модуль для "обвязки" модели декоратором Flask
--- `wsgi.py` - точка входа в приложение
--- `jsp.ini` - файл конфигурации uwsgi
--- `requirements.txt` - перечень требуемых библиотек с указанием версий для установки внутри виртуального энвайронмента `venv`
+- `jsp.py` - модуль для "обвязки" модели декоратором Flask
+- `wsgi.py` - точка входа в приложение
+- `jsp.ini` - файл конфигурации uwsgi
+- `requirements.txt` - перечень требуемых библиотек с указанием версий для установки внутри виртуального энвайронмента `venv`
 
 `/etc`
 
--- `systemd/system/jsp.service` - конфигурация для запуска сервиса jsp через systemd
--- `nginx/sites-available/jsp` - конфигурация nginx
+- `systemd/system/jsp.service` - конфигурация для запуска сервиса jsp через systemd
+- `nginx/sites-available/jsp` - конфигурация nginx
 
 После конфигурирования `nginx` необходимо активировать конфигурацию `sudo ln -s /etc/nginx/sites-available/jsp /etc/nginx/sites-enabled/`
 
