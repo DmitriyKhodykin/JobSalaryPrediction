@@ -1,0 +1,15 @@
+# Запук контейнера 
+# sudo docker run -v /home/dem/docker/jsp/:/app/ --name jsp_app jsp_app
+
+FROM python:3.8
+WORKDIR /app
+
+# Установка зависимостей
+COPY ./jsp/requirements.txt ./requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Копирование данных приложения в WD
+COPY ./jsp ./
+
+# Запуск приложения
+CMD [ "uwsgi", "jsp.ini" ] 
