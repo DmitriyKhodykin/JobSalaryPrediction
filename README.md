@@ -84,6 +84,7 @@ https://github.com/DmitriyKhodykin/JobSalaryPrediction/blob/master/model/JSP_Mod
 
 `/service`
 
+- `/docker` - файлы Docdker и docker-compose
 - `jsp.py` - модуль для "обвязки" модели декоратором Flask
 - `wsgi.py` - точка входа в приложение
 - `jsp.ini` - файл конфигурации uwsgi
