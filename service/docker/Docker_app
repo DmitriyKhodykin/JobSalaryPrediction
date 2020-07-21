@@ -1,6 +1,3 @@
-# Запук контейнера 
-# sudo docker run -v /home/dem/docker/jsp/:/app/ --name jsp_app jsp_app
-
 FROM python:3.8
 WORKDIR /app
 
