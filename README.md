@@ -80,7 +80,7 @@ https://github.com/DmitriyKhodykin/JobSalaryPrediction/blob/master/model/JSP_Mod
 
 Конфигурация развертки предобученной модели машинного обучения – Job Salary Prediction: nginx + uwsgi + Flask + Docker Compose на виртуальном сервере под управлением Ubuntu 20.04. Файлы конфигурации в директории `/service` и `/etc`.
 
-![](/service/jsp_service_pic.png)
+![](/service/jsp_srv_pic.png)
 
 `/service`
 
