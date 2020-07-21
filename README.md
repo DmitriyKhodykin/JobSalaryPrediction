@@ -44,6 +44,8 @@ class Parser:
 
 Собранные парсером данные, а также их визуализация, находятся в директории `data`.
 
+https://github.com/DmitriyKhodykin/JobSalaryPrediction/tree/master/data
+
 ```
 RangeIndex: 3178 entries, 0 to 3177
 Data columns (total 12 columns):
@@ -84,6 +86,8 @@ https://github.com/DmitriyKhodykin/JobSalaryPrediction/blob/master/model/JSP_Mod
 
 ![](/service/jsp_srv_pic.png)
 
+https://github.com/DmitriyKhodykin/JobSalaryPrediction/tree/master/service
+
 `/service`
 
 - `/docker` - файлы Docdker и docker-compose
@@ -93,6 +97,8 @@ https://github.com/DmitriyKhodykin/JobSalaryPrediction/blob/master/model/JSP_Mod
 - `requirements.txt` - перечень требуемых библиотек с указанием версий для установки внутри виртуального энвайронмента `venv`
 
 `/etc`
+
+https://github.com/DmitriyKhodykin/JobSalaryPrediction/tree/master/etc
 
 - `systemd/system/jsp.service` - конфигурация для запуска сервиса jsp через systemd
 - `nginx/sites-available/jsp` - конфигурация nginx
