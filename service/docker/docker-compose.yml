@@ -4,3 +4,5 @@ services:
   image: jsp_app
   volumes:
     - "/home/dem/docker/jsp/:/app/"  
+  web:
+  image: jsp_nginx
