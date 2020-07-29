@@ -105,6 +105,8 @@ Web-интерфейс приложения находится по адресу
 
 ![](/service/web_ui.png)
 
+https://github.com/DmitriyKhodykin/JobSalaryPrediction/tree/master/service/templates
+
 #### Запросы к API
 
 `/jsp` - GET. Возвращает предсказание зарплатных ожиданий сотрудника в зависимости от региона, пола, должности и стажа работы.
