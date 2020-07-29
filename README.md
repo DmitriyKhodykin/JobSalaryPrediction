@@ -99,13 +99,21 @@ https://github.com/DmitriyKhodykin/JobSalaryPrediction/tree/master/etc
 
 ### 5. Использование сервиса
 
+#### WEB UI
+
+Web-интерфейс приложения находится по адресу `http://0.0.0.0:80/`
+
+![](/service/web_ui.png)
+
+#### Запросы к API
+
 `/positions` - GET. Возвращает список должностей:
 
 ['Супервайзер', 'Руководитель продаж', 'Менеджер по продажам', 'Администратор']
 
 `/jsp` - GET. Возвращает предсказание зарплатных ожиданий сотрудника в зависимости от региона, пола, должности и стажа работы.
 
-#### Пример запроса:
+#### Пример запроса через API:
 
 ```
 import requests
@@ -124,9 +132,9 @@ def get_predict_salary():
 
     headers = {'Content-Type': 'application/json; charset=utf-8'}
 
-    r_positions = requests.request("GET", "http://0.0.0.0:81/positions")
+    r_positions = requests.request("GET", "http://0.0.0.0:80/positions")
 
-    r_predict = requests.request("GET", "http://0.0.0.0:81/jsp",
+    r_predict = requests.request("GET", "http://0.0.0.0:80/jsp",
                                  headers=headers,
                                  data='''{
                                  "position": "Супервайзер",
