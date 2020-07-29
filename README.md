@@ -107,13 +107,9 @@ Web-интерфейс приложения находится по адресу
 
 #### Запросы к API
 
-`/positions` - GET. Возвращает список должностей:
-
-['Супервайзер', 'Руководитель продаж', 'Менеджер по продажам', 'Администратор']
-
 `/jsp` - GET. Возвращает предсказание зарплатных ожиданий сотрудника в зависимости от региона, пола, должности и стажа работы.
 
-#### Пример запроса через API:
+Пример запроса через API:
 
 ```
 import requests
@@ -132,8 +128,6 @@ def get_predict_salary():
 
     headers = {'Content-Type': 'application/json; charset=utf-8'}
 
-    r_positions = requests.request("GET", "http://0.0.0.0:80/positions")
-
     r_predict = requests.request("GET", "http://0.0.0.0:80/jsp",
                                  headers=headers,
                                  data='''{
@@ -143,26 +137,19 @@ def get_predict_salary():
                                  "age": 40,
                                  "experience": 10
                                  }'''.encode('utf-8'))
-
-    positions = json.loads(r_positions.text.encode('utf8'))
     predict = json.loads(r_predict.text.encode('utf8'))
 
-    return positions, predict
+    return predict
 
 
 if __name__ == '__main__':
-    print(get_predict_salary()[0],
-          '\n', '\n',
-          get_predict_salary()[1])
+    print(get_predict_salary())
 
 ```
 
 #### Пример ответа:
 
 ```
-{'Positions:': ['Администратор', 'Коммерческий директор', 'Курьер', 'Менеджер по закупкам', 
-'Менеджер по продажам', 'Региональный менеджер', 'Руководитель продаж', 'Супервайзер']} 
-
 {"JobSalaryPrediction, RUR": 50 000}
 ```
 
