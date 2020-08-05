@@ -5,7 +5,7 @@
 
 ## Бизнес-идея
 
-[![Open In Sheets](https://mir-s3-cdn-cf.behance.net/projects/230/cf4cc977638485.Y3JvcCw2NDIsNTAyLDE5MCwxMzM.jpeg)](https://docs.google.com/presentation/d/15DaUDmSKWrMrL1AhAlCBIXSLYfat2_Pm5mlxdejNhtc/edit?usp=sharing)
+[![Open In Sheets](https://www.sites.google.com/site/prepodavaniedramaturgii/_/rsrc/1521550977339/home/servisy-vzaimodejstvia/google-prezentacia/%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%B8.jpg)](https://docs.google.com/presentation/d/15DaUDmSKWrMrL1AhAlCBIXSLYfat2_Pm5mlxdejNhtc/edit?usp=sharing)
 
 ## Техническая реализация
 
