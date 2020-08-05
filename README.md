@@ -5,7 +5,7 @@
 
 ## Бизнес-идея
 
-https://docs.google.com/presentation/d/15DaUDmSKWrMrL1AhAlCBIXSLYfat2_Pm5mlxdejNhtc/edit?usp=sharing
+[![Open In Sheets](https://https://i.pinimg.com/236x/7e/2c/b0/7e2cb01db482d82cbed41e44c899430a--apps.jpg)](https://docs.google.com/presentation/d/15DaUDmSKWrMrL1AhAlCBIXSLYfat2_Pm5mlxdejNhtc/edit?usp=sharing)
 
 ## Техническая реализация
 
@@ -70,8 +70,6 @@ dtypes: datetime64[ns](2), float64(1), int64(3), object(6)
 
 Предобработка данных и построение модели реализовано в ноутбуке `JSP_Model.ipynb` в директории `/model`. Рассмотрим подробнее этот этап по ссылке 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DmitriyKhodykin/JobSalaryPrediction/blob/master/model/JSP_Model.ipynb)
-
-https://github.com/DmitriyKhodykin/JobSalaryPrediction/blob/master/model/JSP_Model.ipynb
 
 ### 4. Развертка сервиса в продакшн на виртуальном сервере
 
