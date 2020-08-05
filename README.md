@@ -5,7 +5,7 @@
 
 ## Бизнес-идея
 
-[![Open In Sheets](https://pc-consultant.ru/wp-content/uploads/2018/03/Google-Slides-300x168.png)](https://docs.google.com/presentation/d/15DaUDmSKWrMrL1AhAlCBIXSLYfat2_Pm5mlxdejNhtc/edit?usp=sharing)
+[![Open In Sheets](https://playit.sg/sites/default/files/pictures/google-slides.png)](https://docs.google.com/presentation/d/15DaUDmSKWrMrL1AhAlCBIXSLYfat2_Pm5mlxdejNhtc/edit?usp=sharing)
 
 ## Техническая реализация
 
