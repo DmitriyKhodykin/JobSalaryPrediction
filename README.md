@@ -70,7 +70,7 @@ dtypes: datetime64[ns](2), float64(1), int64(3), object(6)
 
 Предобработка данных и построение модели реализовано в ноутбуке `JSP_Model.ipynb` в директории `/model`. Рассмотрим подробнее этот этап по ссылке 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github.com/DmitriyKhodykin/JobSalaryPrediction/blob/master/model/JSP_Model.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb)
 
 https://github.com/DmitriyKhodykin/JobSalaryPrediction/blob/master/model/JSP_Model.ipynb
 
