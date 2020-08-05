@@ -5,7 +5,7 @@
 
 ## Бизнес-идея
 
-[![Open In Sheets](https://https://i.pinimg.com/236x/7e/2c/b0/7e2cb01db482d82cbed41e44c899430a--apps.jpg)](https://docs.google.com/presentation/d/15DaUDmSKWrMrL1AhAlCBIXSLYfat2_Pm5mlxdejNhtc/edit?usp=sharing)
+[![Open In Sheets](https://i.pinimg.com/236x/7e/2c/b0/7e2cb01db482d82cbed41e44c899430a--apps.jpg)](https://docs.google.com/presentation/d/15DaUDmSKWrMrL1AhAlCBIXSLYfat2_Pm5mlxdejNhtc/edit?usp=sharing)
 
 ## Техническая реализация
 
